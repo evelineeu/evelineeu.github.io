@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf8">
+<link rel="stylesheet" href="../../css/estilo.css">
+<script src="simulacao2.js">
+</script>
+</head>
+<body>
+	<h1 class="centro"> Simulação 02 - 1° Correlação </h1>
+	<h3> Coloque o valor, selecione o primeiro elemento, depois selecione o segundo elemento com quem ele irá se comparar</h3>
+	<p>H2-mol -> H2O-grama</p>
+	<br>
+	<div class="margem"> 
+		<input id = "valor" 
+			type="number" 
+			id="valor"
+			placeholder="valor"
+		>
+			<select name = "reagente" id='reagente' >
+				<option value="H2"> H2 </option>
+				<option value="H2O"> H2O </option>
+				
+				
+			</select>
+	
+			<select name = "reagente2" id='reagente2' >
+				<option value="H2">H2</option>
+				<option value="H2O"> H2O </option>
+				
+			</select>
+	
+	
+			<select name = "relacao" id='relacao' >
+				<option value="massa">1° Correlação</option>
+				
+			</select>
+			<button onclick="agua();">Executar</button>
+			<p id="conta"></p>
+	
+			
+	
+	
+	
+		
+		
+			<footer>
+				<a class="retorno" href="">Voltar</a>
+			</footer>
+	</div>
+	</body>
+	</html>

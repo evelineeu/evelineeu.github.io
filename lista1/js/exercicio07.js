@@ -1,24 +1,24 @@
+function chamaFuncao(){
+	var carven = document.getElementById("entrada1").value;
+	var totalven = document.getElementById("entrada2").value;
+    var salfix = document.getElementById("entrada3").value;
+    var porcentagem = document.getElementById("entrada4").value;
 
-function carro()
-{
-    var numcar=document.getElementById("entrada1").value;
-    var totalven=document.getElementById("entrada2").value;
-    var salfix=document.getElementById("entrada3").value;
-    var valorcarro=document.getElementById("entrada4").value;
+    carven = parseFloat(carven);
+	 totalven = parseFloat(totalven);
+     salfix = parseFloat(salfix);
+     porcentagem = parseFloat(porcentagem);
 
-    numcar=parseInt(numcar);
-    totalven=parseFloat(totalven);
-    salfix=parseFloat(salfix);
-    valorcarro=parseFloat(valorcarro);
-
-    var resultado=calculasal(numcar,totalven,salfix,valorcarro);
-    alert("O salário final é " + resultado);
+	
+    var result = concessionaria(carven, totalven, salfix, porcentagem);
+	alert( result);
 }
 
-function calculasal(numcar,totalven,salfix,valorcarro)
-{
-    var soma1=valorcarro*numcar;
-    var soma2=(totalven*0.05);
-    var salario_final=salfix+soma1+soma2;
-    return salario_final;
+function concessionaria (cv, tv, sf, pc){
+
+    var pc1= pc/100;
+    var comissao = cv* pc1;
+    var totalVendas= tv * 0.05;
+    return sf + comissao + totalVendas;
+
 }

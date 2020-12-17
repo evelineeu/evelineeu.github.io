@@ -1,0 +1,46 @@
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 3px solid black;
+    padding: 3px;
+    background-color: rgb(255, 195, 128);
+    font-family: 'Londrina Solid', cursive;
+}
+
+
+li {
+    padding: 1% 0% 0% 10%;
+    list-style-type: none;
+    font-size: 25px;
+    text-align: left;
+}
+
+
+
+ul {
+    list-style-type: disc;
+}
+
+h1 { font-family:  'Cabin Sketch', cursive;
+     color: rgb(226, 130, 4);
+     font-size: 50px;
+
+      }
+     
+
+
+h2 { font-family:  'Cabin Sketch', cursive;
+    color: rgb(226, 130, 4);
+    font-size: 30 px;
+    
+  
+}
+
+body{ 
+background-image: linear-gradient(to right top, #ffb100, #fac84d, #f7dd7f, #f9efb0, #ffffe0);
+
+}
+
+
+

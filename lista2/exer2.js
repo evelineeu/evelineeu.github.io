@@ -5,7 +5,7 @@ function pares()
 	var n2 = document.getElementById("entrada2").value;
 	n1 = parseInt(n1);
 	n2= parseInt(n2);
-
+	//vendo qual é o maior para o for
 	var a= 0;
 	var b= 0;
 	var texto ="Os números pares são:"

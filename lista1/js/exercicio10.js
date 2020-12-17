@@ -1,23 +1,17 @@
-function macas()
-{
-    var quantidade=document.getElementById("entrada").value;
+function chamaFuncao(){
+	var n1 = document.getElementById("entrada1").value;
+	n1 = parseInt(n1);
+	alert ( result)
+	var result = maca (n1);
 
-    quantidade=parseInt(quantidade);
-
-    var resultado=calcula_maca(quantidade);
-    alert("O total é " + resultado + " reais");
 }
 
-function calcula_maca(quantidade)
+
+function maca(macas)
 {
-    var preco;
-    if(quantidade<12)
-    {
-        preco=1.30*quantidade;
-    }
-    else
-    {
-        preco=1.00*quantidade;
-    }
-    return preco;
+    if(macas>12)
+    return macas * 1
+    else return macas * 1.30
+        
+
 }
