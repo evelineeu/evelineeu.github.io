@@ -1,15 +1,17 @@
-function chamaFuncao(){
-	var f = document.getElementById("entrada1").value;
 
-	f = parseInt(f);
 
-	
-	var resultado = celcius(f);
-	alert( resultado);
+function temperatura()
+{
+    var temperatura=document.getElementById("entrada").value;
+
+    temperatura=parseFloat(temperatura);
+
+    var resultado=Celsius_em_Fahrenheit(temperatura);
+    alert(temperatura + "°C é " + resultado + "°F");
 }
 
-function celcius(f){
-    var result= ((f - 32)/ 9) * 5                                   
-    return result;
-
+function Celsius_em_Fahrenheit(temperatura)
+{
+    var resultado=((9*temperatura)/5)+32;
+    return resultado;
 }
