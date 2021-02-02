@@ -1,22 +1,36 @@
 
-<!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Química</title>
-    </head>
-    <body>
-        <h1>Digite valores em gramas de H2 e O2, e veja quem é o agente limitante, quem é o agente que está em excesso a quantidade de gramas que está em excesso.</h1>
-        <form>
-            <label>Correlação = Massa H2 - Massa O2</label>
-            <input type="number" id="h2" placeholder="Digite H2 em gramas:">
-            <input type="number" id="o2" placeholder="Digite O2 em gramas:"><br><br>
-            <button type="button" id="botao">Calcular</button>
-            <button type="button" id="limpar">Limpar</button>
-            <p id="resultado"></p>
-        </form>
-        <br><li><a href="simulacoes.html">Voltar</a></li>
-        <script src="simula3.js"></script>
-    </body>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf8">
+<link rel="stylesheet" href="../../css/estilo.css">
+<script src="simula3.js">
+</script>
+</head>
+<body>
+
+<h1 class="centro"> Simulação 03 </h1>
+<h3> Coloque o valor de O2 e de H2</h3>
+<p>O2G - H2G  : H2O</p>
+<br>
+<div class="margem"> 
+	<input id = "o2" 
+		type="number" 
+		placeholder="O2 g"
+	>
+
+	<input id = "h2" 
+		type="number" 
+		placeholder="H2 g"
+	>
+	<button onclick="limitante();">Calcular</button>
+	<p id="conta"></p>
+
+
+	
+	
+			<a class="retorno" href="abaprincipal.html">Voltar</a>
+		</footer>
+</div>
+</body>
 </html>
