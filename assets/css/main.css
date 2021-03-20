@@ -1816,6 +1816,8 @@
 			margin: 0;
 			border-radius: 0;
 		}
+		
+
 
 			.box .image.fit img {
 				border-radius: 0;
@@ -4336,4 +4338,22 @@
 				padding: 3rem 0 1rem 0 ;
 			}
 
+		}
+		.questoes-header {
+			background-color: #0f94be;
+			padding: 15px 20px;
+			color: #fff;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-family: Roboto;
+			display: block;
+		}
+		* {
+			background: 0 0;
+			font-family: inherit;
+			font-size: 100%;
+			margin: 0;
+			border: 0;
+			outline: 0;
+			padding: 0;
 		}

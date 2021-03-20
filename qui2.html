@@ -32,6 +32,85 @@
 				</div>
 			</section>
 
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Green Exposure  
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130308
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title> </title>
+<link href="http://fonts.googleapis.com/css?family=Arvo|Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <script>    
+    function quest1() {
+                var option = $('#selectOption1').find(":selected").text();
+                console.log(option);
+                if(option == "D"){
+                    document.getElementById("txt1").innerHTML = "Alternativa correta. Parabéns, Eisnten!!!";
+                }
+                else{
+                    document.getElementById("txt1").innerHTML = "Alternativa incorreta";
+                }
+
+            }
+
+    function quest2()
+    {
+            var option = $('#selectOption2').find(":selected").text();
+            if(option == "E"){
+                    document.getElementById("txt2").innerHTML = "Alternativa correta. Parece que temos um gênio por aqui";
+                }
+                else{
+                    document.getElementById("txt2").innerHTML = "Alternativa incorreta";
+                }
+
+    }
+
+    function quest3()
+    {
+            var option = $('#selectOption3').find(":selected").text();
+            if(option == "B"){
+                    document.getElementById("txt3").innerHTML = "Alternativa correta. Muito bem!!!";
+                }
+                else{
+                    document.getElementById("txt3").innerHTML = "Alternativa incorreta";
+                }
+
+    }
+
+    function res1(){
+        alert("Resposta correta: Alternativa D  \n\n Um gás real aproxima-se do ideal quanto mais alta for sua temperatura e menor sua pressão.");		
+    }
+
+    function res2(){
+        alert("Resposta correta: Alternativa E.\n\n A transformação isovolumétrica, também chamada de isocórica, ocorre com volume constante. Como a pressão é diretamente proporcional à temperatura, podemos afirmar que ela também foi quadruplicada.");
+    }
+
+    function res3(){
+        alert("Resposta correta: \n Alternativa B. \n\n As variáveis de estado são três: volume, temperatura e pressão.\nVolume: é o volume do recipiente que o contém.\nTemperatura: é a responsável por medir o estado de agitação molecular.\nPressão: a pressão é ocasionada pelo choque que ocorre em suas partículas contra as paredes do recipiente que o contém. ");
+    }
+
+</script>
+
+
+</body>
+</html>		
 		<!-- Two -->
 			<section id="two" class="wrapper style2">
 				<div class="inner">
@@ -106,7 +185,114 @@
 											Com as conversões necessárias, também podemos expressar a constante do gás como igual a:
 											R = 8.314 J / K.mol ou 1.986 cal / k.mol</p>
 
-
+											<div id="wrapper"> 
+												<!-- end #header -->
+												<div id="page">
+													<div id="page-bgtop">
+														<div id="page-bgbtm">
+														<div id="sidebar">
+															<h1> Exercícios de fixação</h1>
+															<b>Questão 1 -</b> (F.M. Itajubá - MG)
+								
+															O comportamento de um gás real aproxima-se do de um gás ideal quando:
+														<br><b>
+															A) submetido a baixas temperaturas.
+														<br>
+															B) submetido a baixas temperaturas e baixas pressões.
+														<br>
+															C) submetido a altas temperaturas e altas pressões.
+														<br>
+															D) submetido a altas temperaturas e baixas pressões.
+														<br>
+															D) submetido a baixas temperaturas e altas pressões.
+														<br> </b>
+																Selecione uma das alternativas abaixo: 
+																<select id="selectOption1">
+																	<option value="a">A</option>
+																	<option value="b">B</option>
+																	<option value="c">C</option>
+																	<option value="d">D</option>
+																	<option value="e">E</option>
+																</select><br>
+																<button onclick="quest1();">Verificar</button>
+																<button onclick="res1();">Alternativa correta</button>
+														<br>
+															<p id=txt1> </p>
+														<br>
+														<b>Questão 2 -</b> Em uma transformação isovolumétrica, a temperatura final do processo é o quádruplo da temperatura inicial. Sendo assim, determine a relação entre a pressão final e inicial.<br><b>
+																A) A pressão final será quatro vezes menor.
+																<br>
+																B) Não haverá variação de pressão, uma vez que a transformação é isocórica.
+																<br>
+																C) A pressão final será o quádruplo da pressão inicial.
+																<br>
+																D) A pressão final e a inicial serão iguais.
+																<br>
+																E) A pressão final é o dobro da pressão inicial.
+																</b><br> 
+														Selecione uma das alternativas abaixo: 
+																<select id="selectOption2">
+																	<option value="a">A</option>
+																	<option value="b">B</option>
+																	<option value="c">C</option>
+																	<option value="d">D</option>
+																	<option value="e">E</option>
+																</select><br>
+																<button onclick="quest2();">Verificar</button>
+																<button onclick="res2();">Alternativa correta</button>
+														
+														<br>
+															<p id=txt2> </p>
+														<br>
+																<b>Questão 3 -</b> O estado de um gás perfeito é caracterizado por quais variáveis de estado? 
+																<br><b>
+																A) Rio de Janeiro e Goiás.
+																<br>
+																B) Volume, temperatura e pressão.
+																<br>
+																C) Graus e radianos.
+																<br>
+																D) Sólido, líquido e gasoso.
+																<br>
+																E) Nenhuma das alternativas
+																</b><br> 
+																Selecione uma das alternativas abaixo: : 
+																<select id="selectOption3">
+																	<option value="a">A</option>
+																	<option value="b">B</option>
+																	<option value="c">C</option>
+																	<option value="d">D</option>
+																	<option value="e">E</option>
+																</select><br>
+																<button onclick="quest3();">Verificar</button>
+																<button onclick="res3();">Alternativa correta</button>
+															
+														<br>
+															<p id=txt3> </p>
+														<br>
+										
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+															<br> 
+														
+															<div id="content">
+																
+										
+																	</div>
+																</div>
+															
+										
+															
+										
+										
+																	</div>
+																</div>
+															</div>
+										
 							</div>
 						</div>
 					</div>
