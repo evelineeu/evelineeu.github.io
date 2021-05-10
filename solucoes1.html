@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf8">
+</script>
+</head>
+<body>
+
+<h1 class="centro"> Tipos de soluções </h1>
+<h3> Insira o valor em mililitros de CH₃COOH (Ácido acético) e litros de H2O (Água)</h3>
+<p> CH₃COOH - H2O </p>
+<br>
+<div class="margem"> 
+	<input id = "acido" 
+		type="number" 
+		placeholder="CH₃COOH"
+	>
+
+	<input id = "h2o" 
+		type="number" 
+		placeholder="H2O"
+	>
+	<button onclick="classificacao();">Executar</button>
+	<p id="conta"></p>
+
+	
+		<footer>
+			<p> Evellyn e Gabriel Corrêa </p>
+			<a class="retorno" href="qui2solucoes.html">Voltar</a>
+		</footer>
+</div>
+<script>
+function classificacao()
+{
+	var acido = document.getElementById("acido").value;
+	var h2o = document.getElementById("h2o").value;
+	acido = parseFloat(acido);
+	h2o = parseFloat(h2o);
+	var acidop = 55;
+	var h2op = 1;
+	var r1 = acido * h2op;
+	var r2 = acidop * h2o;
+	var r3 = r1 / r2;
+
+	if(r3<1)
+	{
+		 var resultado = "Se 55 mililitros de CH₃COOH para 1 litro de H2O é uma solução saturada, então: <br> 55 --- 1 <br> " + acido + " --- " + h2o + " <br> <br> " + r1 + " / " + r2 + "= (<1)"+ "<br>A mistura é INSATURADA ";
+		
+	}
+
+
+	if(r3>1)
+	{
+		var resultado = "Se 55 mililitros de CH₃COOH para 1 litro de H2O é uma solução saturada, então: <br> 55 --- 1 <br> " + acido + " --- " + h2o + " <br> <br> " + r1 + " / " + r2 + " = (>1)<br>A mistura éSUPERSATURADA ";
+	}
+
+
+
+	if(r3==1)
+	{
+		var resultado = "Se 55 mililitros de CH₃COOH para 1 litro de H2O é uma solução saturada, então: <br> 55 --- 1 <br> " + acido + " --- " + h2o + " <br> <br> " + r1 + " --- " + r2 + "<br> " + r1 + "/" + r2 + "= 1 <br>A mistura é SATURADA";
+		
+	}
+
+	document.getElementById("conta").innerHTML = resultado;
+
+}
+
+</script>
+</body>
+</html>
